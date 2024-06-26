@@ -5,7 +5,7 @@ class Person(name, age) {
 		this.age=age;
 	}
 	greet(){
-		console.log(`Hello, my name is ${name}, I am ${age} years old.`);
+		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 	}
 }
 
@@ -15,7 +15,7 @@ class Employee extends Person{
 		this.jobTitle=jobTitle;
 	}
 	jobGreet(){
-		console.log(`Hello, my name is ${name}, I am ${age} years old, and my job title is ${jobTitle}.`);
+		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 	}
 }
 const person = new Person('Alice', 25);
